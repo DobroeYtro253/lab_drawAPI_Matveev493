@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Graphs">
+
+    <ListView
+        android:id="@+id/listViewGraphs"
+        android:layout_width="match_parent"
+        android:layout_height="458dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="on_addNewGraph"
+        android:text="Add graph" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="on_deleteGraph"
+        android:text="Delete Graph" />
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="on_close"
+        android:text="Close session" />
+
+    <Button
+        android:id="@+id/buttonSession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:onClick="on_session"
+        android:text="Session setting" />
+
+</LinearLayout>

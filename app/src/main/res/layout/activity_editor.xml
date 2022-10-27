@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".graphEdit.EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="on_close"
+            android:text="Close"
+            android:textSize="12sp" />
+
+        <com.example.lab_drawapi_matveev493.GraphView
+            android:id="@+id/graphView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="on_add"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="on_remove"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/buttonLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="on_link"
+            android:text="L" />
+
+        <Button
+            android:id="@+id/buttonRename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="on_rename"
+            android:text="R" />
+
+        <Button
+            android:id="@+id/buttonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="on_text"
+            android:text="T" />
+    </LinearLayout>
+
+</LinearLayout>
